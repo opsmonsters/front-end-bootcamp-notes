@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- Structure of a form -->
+    <!-- form can have 2 methods 1->post 2->GET -->
+    <h2>Form Structrue</h2>
+    <form action="/tables.html" method="get">
+        <p>This is where we will build our form</p>
+        <input type="submit">
+    </form>
+    <hr />
+
+    <!-- Adding text input to forms -->
+    <!-- <input type="" options /> -->
+    <form action="/tables.html" method="get">
+        <!-- Text -->
+        <p>Enter you username</p>
+        <input type="text" name="user_name" />
+
+        <!-- Password -->
+        <p>Enter you password</p>
+        <input type="password" name="password" />
+
+        <!-- Text Area -->
+        <p>Enter a description</p>
+        <textarea name="description"></textarea>
+
+        <!-- Radio Buttons  -->
+        <p>Select your favourite icream</p>
+        <input type="radio" name="icecream" value="Vanilla1">Vannila
+        <input type="radio" name="icecream" value="Jackfruit1" checked>Jackfruit
+        <input type="radio" name="icecream" value="Mango1">Mango
+
+        <!-- Checkbox -->
+        <p>Select Favourite Music</p>
+        <input type="checkbox" name="music" value="pop">PoP
+        <input type="checkbox" name="music" value="jazz">Jazz
+        <input type="checkbox" name="music" value="classical">Classical
+
+        <!-- Drop Down -->
+        <p>Select you Favourite Place</p>
+        <select name="place">
+            <option value="" selected> </option>
+            <option value="Kodaikanal">Kodaikanal</option>
+            <option value="Ooty">Ooty</option>
+            <option value="Moonar">Moonar</option>
+        </select>
+
+        <!-- File Upload -->
+        <p>Upload your profile picture</p>
+        <input type="file" name="profile_picture">
+
+        <!-- Date time -->
+        <p>Pick a date</p>
+        <input type="date" name="date">
+
+        <!-- Submit -->
+        <br><br>
+        <button>Update my data</button>
+        <button>
+            <img src="images/cat.jpg" alt="" height="100">
+        </button>
+        <!-- or -->
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
