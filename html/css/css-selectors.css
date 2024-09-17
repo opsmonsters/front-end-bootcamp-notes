@@ -1,0 +1,37 @@
+/* Universal selector */
+
+* {
+  font-family: sans-serif;
+}
+
+/* Type selector */
+h1 {
+  background-color: black;
+  color: white;
+}
+
+h2,
+h3 {
+  background-color: aqua;
+  color: lime;
+}
+
+/* class selectors */
+.pink-bg {
+  color: purple;
+  background-color: pink;
+}
+
+/* id selector */
+#big-font {
+  font-size: 24px;
+}
+
+/* Child Selector */
+.blue-color > li {
+  color: blue;
+}
+
+h1 {
+  background-color: gray;
+}
