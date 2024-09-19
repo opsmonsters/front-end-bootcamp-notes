@@ -1,0 +1,28 @@
+/* colors can be provided in 3 methods */
+
+/* First Method is using the Hex Code */
+.first {
+  color: #f11f1f;
+}
+
+/* second method is using the rgb code */
+.second {
+  color: rgb(31, 79, 241);
+}
+
+/* third method is just using the color names */
+.third {
+  color: limegreen;
+}
+
+.first-bg {
+  background-color: #ff00c8;
+  padding: 16px;
+}
+
+/* Adjusting Opacity */
+.second-bg {
+  background-color: rgba(103, 248, 6, 0.359);
+  color: rgba(255, 11, 11, 0.364);
+  padding: 16px;
+}
