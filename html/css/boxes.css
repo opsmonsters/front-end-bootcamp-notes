@@ -1,1 +1,64 @@
-/* There are three types */
+/* There are three types of units*/
+
+/* px */
+.pixel {
+  font-size: 24px;
+}
+
+/* em */
+.em {
+  font-size: 2em;
+}
+
+/* Percentage */
+.percentage {
+  font-size: 150%;
+}
+
+.dimension-p {
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.border-1 {
+  margin: 24px;
+  padding: 16px;
+  /* border-width: 10px;
+  border-color: black;
+  border-style: solid; */
+
+  border: 5px dashed red;
+}
+
+.button {
+  background-color: rgb(41, 123, 245);
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  padding: 8px;
+  font-size: 24px;
+  border: 5px solid rgb(37, 37, 221);
+  border-radius: 8px;
+  margin: 40px;
+}
+
+.button:hover {
+  background-color: rgb(37, 37, 221);
+  color: white;
+  padding: 12px;
+  border: 5px solid rgb(41, 123, 245);
+  cursor: pointer;
+}
+
+.inline-p {
+  display: inline;
+  display: block;
+  display: inline-block;
+}
+
+.img-margin {
+  margin: 0px 50px 0px 50px;
+  border: 5px solid black;
+}
