@@ -1,0 +1,50 @@
+.image {
+  height: 200px;
+  width: 200px;
+}
+
+.border {
+  /* border-style: dotted;
+  border-width: 8px;
+  border-color: red; */
+
+  /* border-top-style: dashed;
+  border-bottom-style: groove;
+  border-right-style: solid;
+  border-left-style: double; */
+
+  border: 8px solid rgb(219, 136, 136);
+
+  border-radius: 50%;
+}
+
+.padding {
+  /* padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px; */
+
+  /* padding: 16px; */
+
+  padding: 16px 8px 16px 8px;
+}
+
+.margin {
+  /* margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px; */
+
+  margin: 32px 0px 16px 32px;
+}
+
+.div {
+  height: 600px;
+  width: 600px;
+  background-color: blue;
+}
+
+.div-image {
+  /* height: 50%; */
+  width: inherit;
+}
