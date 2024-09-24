@@ -1,0 +1,55 @@
+.section-div {
+  background-color: darkgray;
+  height: 100px;
+  width: 600px;
+}
+
+.static-p {
+  /* this does nothing */
+  top: 10px;
+}
+
+.relative-p {
+  position: relative;
+  margin: 0px;
+  display: inline;
+  bottom: 20px;
+}
+
+.fluffy-dog {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.fluffy-dog-big {
+  height: 300px;
+  width: 100%;
+}
+
+.absolute-p {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+}
+
+.section-div-relative {
+  background-color: darkgray;
+  position: relative;
+}
+
+.inside-div {
+  margin: 20px;
+  height: 50px;
+  width: 300px;
+  background-color: aqua;
+}
+
+/* .fixed-div {
+  background-color: darkblue;
+  height: 100px;
+  width: 600px;
+  position: fixed;
+  top: 0px;
+} */

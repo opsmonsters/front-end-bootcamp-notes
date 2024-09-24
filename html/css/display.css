@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.block-div {
+  width: 50%;
+}
+
+.inline-block-p {
+  /* display: block;
+    display: inline; */
+  display: inline-block;
+}
+
+.fluffy-dog {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.invisible-div {
+  display: none;
+}
