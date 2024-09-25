@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+}
+
+.nav-container {
+  padding: 0.5%;
+  width: 100%;
+}
+
+.nav-brand-container {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.nav-brand-img {
+  width: 120px;
+  padding: 0px;
+  position: relative;
+  top: 10px;
+  left: 10%;
+}
+
+.nav-menu-list-items {
+  display: inline;
+  margin: 0px 16px 0 16px;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.nav-menu-list-items:hover {
+  background-color: blue;
+  cursor: pointer;
+}
