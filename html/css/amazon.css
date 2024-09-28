@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav-container {
+  height: 50px;
+  background-color: #131921;
+}
+
+.nav-brand-img {
+  height: 32px;
+  padding: 6px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.nav-brand-img:hover {
+  border: 1px solid white;
+}
+
+.container {
+  max-width: 96%;
+  padding: 16px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: lightgray;
+}
+
+.image-card {
+  margin: 16px;
+  padding: 8px;
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  display: inline-block;
+}
+
+.image-card:hover {
+  border: 1px solid black;
+}
+
+.card-img {
+  width: 90px;
+}
+
+.card-text {
+  text-align: center;
+}
