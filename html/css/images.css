@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  background-color: #323c46;
+  color: #333;
+}
