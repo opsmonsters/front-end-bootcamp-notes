@@ -34,3 +34,9 @@ let lastName = "Kumar";
 let fullName = firstName + " " + lastName;
 
 console.log(fullName);
+
+// increment / decrement operator
+
+x++; //x = x + 1;
+x--; //x = x -1;
+console.log(x);
