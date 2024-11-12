@@ -13,3 +13,8 @@ console.log(false && false);
 // NOT
 console.log(!true);
 console.log(!false);
+
+// nullish operator ??
+let firstName;
+let lastName;
+console.log(firstName ?? lastName ?? "User");
