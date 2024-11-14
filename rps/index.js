@@ -1,8 +1,6 @@
 console.log("Starting Game");
 
-let isGameRunning = true;
-
-while (isGameRunning) {
+while (true) {
   let userChoice = prompt("Enter your choice");
 
   let randomNumber = Math.floor(Math.random() * 3);
@@ -39,5 +37,5 @@ while (isGameRunning) {
   }
 
   console.log("Computer Win");
-  isGameRunning = false;
+  break;
 }
