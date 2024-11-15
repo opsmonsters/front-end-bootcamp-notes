@@ -1,6 +1,11 @@
 console.log("Starting Game");
 
-while (true) {
+let userScore = 0;
+let computerScore = 0;
+
+let winningScore = 2;
+
+while (userScore < winningScore && computerScore < winningScore) {
   let userChoice = prompt("Enter your choice");
 
   let randomNumber = Math.floor(Math.random() * 3);
@@ -18,24 +23,38 @@ while (true) {
 
   if (userChoice == computerChoice) {
     console.log("Match Draw");
-    break;
+    continue;
   }
 
   if (userChoice == "rock" && computerChoice == "sissor") {
     console.log("You Win");
-    break;
+    userScore++;
+    continue;
   }
 
   if (userChoice == "paper" && computerChoice == "rock") {
     console.log("You Win");
-    break;
+    userScore++;
+    continue;
   }
 
   if (userChoice == "sissor" && computerChoice == "paper") {
     console.log("You Win");
-    break;
+    userScore++;
+    continue;
   }
 
   console.log("Computer Win");
-  break;
+  computerScore++;
 }
+
+console.log("======================================================");
+console.log("===========          GAME OVER    ====================");
+
+if (userScore > computerScore) {
+  console.log("You win");
+} else {
+  console.log("Computer Win");
+}
+console.log("======================================================");
+console.log("======================================================");
