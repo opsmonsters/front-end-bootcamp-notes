@@ -1,0 +1,22 @@
+body {
+  background-color: lightgray;
+  color: black;
+}
+.container {
+  background-color: whitesmoke;
+  border-radius: 16px;
+  padding: 8px;
+  width: 90%;
+  margin: auto;
+}
+
+.blog-content-container {
+  background-color: lightgray;
+  border: 2px solid black;
+  margin: 16px 0px 16px 0;
+  padding: 16px;
+}
+
+.blog-content-container p {
+  margin: 8px 0px 8px 0;
+}
