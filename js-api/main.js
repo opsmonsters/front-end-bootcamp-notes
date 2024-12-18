@@ -1,3 +1,30 @@
+async function createBlog() {
+  let userId = document.getElementById("userId").value;
+  let title = document.getElementById("title").value;
+  let body = document.getElementById("body").value;
+
+  let payload = {
+    userId: userId,
+    title: title,
+    body: body,
+  };
+
+  console.log(payload);
+
+  let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "post",
+    body: JSON.stringify(payload),
+  });
+
+  let responseJson = await response.status;
+  if (responseJson == 201) {
+    alert("Blog Created Successfully");
+  } else {
+    alert("Some error occurred");
+  }
+  toggleForm();
+}
+
 async function getAllBlogs() {
   let url = "https://jsonplaceholder.typicode.com/posts";
   let httpResponse = await fetch(url);
@@ -31,5 +58,16 @@ async function getAllBlogs() {
           </div>
     `;
     container.innerHTML += template;
+  }
+}
+
+function toggleForm() {
+  createBlogForm = document.getElementById("create-blog-container");
+  if (createBlogForm.classList.contains("display-none")) {
+    createBlogForm.classList.remove("display-none");
+    createBlogForm.classList.add("display-block");
+  } else {
+    createBlogForm.classList.remove("display-block");
+    createBlogForm.classList.add("display-none");
   }
 }

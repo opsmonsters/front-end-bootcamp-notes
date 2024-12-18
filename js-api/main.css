@@ -20,3 +20,39 @@ body {
 .blog-content-container p {
   margin: 8px 0px 8px 0;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-new {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgb(109, 109, 240);
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: 2px solid black;
+}
+
+.btn-new:hover {
+  background-color: white;
+  color: black;
+}
+
+.create-blog {
+  padding: 16px;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}

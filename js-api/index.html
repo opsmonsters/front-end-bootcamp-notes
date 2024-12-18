@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
 </head>
 
 <body onload="getAllBlogs()">
     <div class="container" id="container">
-        <div>
+        <div class="header">
             <h1>My Blog</h1>
+            <button class="btn btn-new" onclick="toggleForm()">New Post</button>
+        </div>
+        <div class="create-blog display-none" id="create-blog-container">
+            <p>Title</p>
+            <input type="text" id="title">
+            <p>Body</p>
+            <input type="text" id="body">
+            <p>user Id</p>
+            <input type="number" id="userId">
+            <button id="form-submit" onclick="createBlog()">Submit</button>
         </div>
     </div>
 </body>
+<script src="main.js"></script>
+
 
 </html>
