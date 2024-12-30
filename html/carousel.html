@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <style>
+        img {
+            height: 500px;
+        }
+
+        #test-canv {
+            height: 500px;
+            width: 50%;
+        }
+
+        #error-msg {
+            position: absolute;
+            z-index: 9999;
+            top: 10px;
+            right: 10px;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .prev-btn,
+        .next-btn {
+            position: absolute;
+            z-index: 999;
+            top: 250px;
+            font-size: 32px;
+            padding: 16px;
+            border-radius: 8px;
+            color: white;
+
+        }
+
+        .prev-btn:hover,
+        .next-btn:hover {
+            background-color: white;
+            color: #000;
+            opacity: 0.5;
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="owl-carousel">
+        <img src="https://picsum.photos/seed/icsum/500" alt="">
+        <img src="https://picsum.photos/seed/pium/500" alt="">
+        <img src="https://picsum.photos/seed/pim/500" alt="">
+        <img src="https://picsum.photos/seed/psdaim/500" alt="">
+        <img src="https://picsum.photos/seed/pimsas/500" alt="">
+        <img src="https://picsum.photos/seed/pipasm/500" alt="">
+        <img src="https://picsum.photos/seed/ppeoiim/500" alt="">
+    </div>
+
+    <!-- <img src="images/prev.png" class="prev-btn" alt="Prev"> -->
+    <span class="prev-btn" alt="Prev">&lt</span>
+    <span class="next-btn" alt="next">&gt</span>
+    <!-- <img src="images/next-btn.png" class="next-btn" alt="Next"> -->
+
+    <div class="alert alert-danger" role="alert" id="error-msg">
+        wrong password
+    </div>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+            attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="owl/dist/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        let owl = $(".owl-carousel").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+        });
+
+        $('.next-btn').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+
+        $('.prev-btn').click(function () {
+            owl.trigger('prev.owl.carousel');
+        })
+
+
+        setTimeout(() => {
+            document.getElementById("error-msg").classList.add("display-none");
+        }, 5000)
+
+
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+</html>
